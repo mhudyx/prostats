@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.scss';
-import { Navigation, Content, Footer } from './layouts';
+import { Navigation, Content, Footer } from './components';
 
 function App() {
   return (
