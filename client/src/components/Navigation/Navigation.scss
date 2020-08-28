@@ -1,3 +1,66 @@
 nav {
     grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 25px;
+    background: #121212;
+    line-height: 64px;
+
+    .nav__logo {
+        font-size: 2.4rem;
+        font-family: 'Russo One', sans-serif;
+        color: #319caa;
+        cursor: pointer;
+    }
+
+    .nav__mobile-menu {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+
+        & a {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .nav__normal-menu {
+        display: none;
+    }
+
+    @media(min-width: 900px) {
+
+        padding: 0 50px;
+        justify-content: left;
+
+        .nav__logo {
+            font-size: 3rem;
+            margin-right: 100px;
+        }
+
+        .nav__mobile-menu {
+            display: none;
+        }
+
+        .nav__normal-menu {
+            // width: 30%;
+            display: flex;
+            justify-content: space-around;
+
+            & a {
+                font-size: 1.8rem;
+                color: white;
+                margin-right: 25px;
+                padding: 0 10px;
+                border-bottom: 2px solid #121212;
+
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
 }
